@@ -49,5 +49,5 @@ Additionally, a **Flask web app** was created to allow users to input SMS text a
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/sms-spam-detection-ml.git
+git clone https://https://github.com/ganesh768-code/SMS-spam-detection-using-ML.git
 cd sms-spam-detection-ml
