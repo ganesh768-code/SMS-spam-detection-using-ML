@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS Spam detection</title>
+  <link href="{{ url_for('static', filename='Home.css') }}" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="{{ url_for('static', filename='spam.jpg') }}" alt="Image">
+    <div class="overlay-text">
+      <h1>SMS SPAM DETECTION</h1>
+    </div>
+    <button class="overlay-button" onclick="redirectToNextPage()">Let's Start</button>
+  </div>
+  <script>
+    function redirectToNextPage() {
+      window.location.href = "{{ url_for('detectpage') }}";
+    }
+  </script>
+
+</body>
+
+</html>
+
+
+

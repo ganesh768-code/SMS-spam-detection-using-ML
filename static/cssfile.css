@@ -1,0 +1,68 @@
+
+   
+
+
+
+
+
+
+
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Heading */
+h1 {
+    color: #333; /* Dark gray text */
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+}
+
+/* Styling for 'SPAM' */
+.result p.spam{
+    color: red; /* Red text for spam */
+}
+
+/* Styling for 'NOT SPAM' */
+.result p.not-spam{
+    color: green; /* Green text for not spam */
+}
+

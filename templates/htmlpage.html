@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Spam Detection</title>
+    <link  href="{{ url_for('static', filename='cssfile.css') }}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <a class="home-button" href="{{ url_for('home') }}">Home</a>
+    <h1>SMS Spam Detection</h1>
+    
+    <form action="/predict" method="post">
+        <textarea name="message" placeholder="Enter your SMS here"></textarea>
+        <button type="submit">Check for Spam</button>
+    </form>
+    <div class="result" id="result">
+        {% if predicted_class %}
+            <p class="{% if predicted_class == 'SPAM' %}spam{% else %}not-spam{% endif %}">This SMS is {{ predicted_class }}</p>
+        {% endif %}
+    </div>
+    <!-- Add a reload button -->
+    <button onclick="reloadPage()">Reload</button>
+
+    <!-- Link to your JavaScript file -->
+    <script src="{{ url_for('static', filename='javascriptfile.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Spam Detection</title>
+</head>
+<body align="center">
+    <form method="post">
+        <h1>Upload the Message in below box:</h1><br>
+        <textarea rows="5" cols="40" name="message"></textarea><br><br>
+
+        <input type="submit" value="predict">
+    </form>
+{% if predicted_class %}
+    <h2>{{predicted_class}}</h2>
+    {% endif %}
+</body>
+</html>

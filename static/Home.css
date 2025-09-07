@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+  }
+  
+  /* Style for the image */
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Style for the text overlay */
+  .overlay-text {
+    position: absolute;
+    top: 10px; /* Adjust for distance from top */
+    left: 10px; /* Adjust for distance from left */
+    color: rgb(20, 1, 1);
+    font-size: 20px;
+    background-color: #c1d2fe; /* Semi-transparent background */
+    padding: 10px;
+  }
+  
+  /* Style for the button */
+  .overlay-button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 10px; /* Adjust for distance from right */
+    transform: translate(0, -50%);
+    background-color: #0c6bd0; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .overlay-button:hover {
+    background-color: #0056b3; /* Darker blue color */
+  }
